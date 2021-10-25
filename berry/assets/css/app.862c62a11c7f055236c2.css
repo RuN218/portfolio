@@ -950,7 +950,7 @@ input[type='number'] {
 @media (min-width: 1024px) {
   .promo__subtitle {
     font-size: 2.25rem;
-    line-height: 10rem;
+    line-height: 2.5rem;
     padding-bottom: 5rem;
   }
 }
