@@ -160,36 +160,36 @@ img {
   font-family: nunito;
   font-style: normal;
   font-weight: 400;
-  src: url(assets/fonts/nunito-regular-webfont.woff) format('woff'),
-    url(assets/fonts/nunito-regular-webfont.woff2) format('woff2');
+  src: url(../fonts/nunito-regular-webfont.woff) format('woff'),
+    url(../fonts/nunito-regular-webfont.woff2) format('woff2');
 }
 @font-face {
   font-family: nunito;
   font-style: normal;
   font-weight: 600;
-  src: url(assets/fonts/nunito-semibold-webfont.woff) format('woff'),
-    url(assets/fonts/nunito-semibold-webfont.woff2) format('woff2');
+  src: url(../fonts/nunito-semibold-webfont.woff) format('woff'),
+    url(../fonts/nunito-semibold-webfont.woff2) format('woff2');
 }
 @font-face {
   font-family: nunito;
   font-style: normal;
   font-weight: 700;
-  src: url(assets/fonts/nunito-bold-webfont.woff) format('woff'),
-    url(assets/fonts/nunito-bold-webfont.woff2) format('woff2');
+  src: url(../fonts/nunito-bold-webfont.woff) format('woff'),
+    url(../fonts/nunito-bold-webfont.woff2) format('woff2');
 }
 @font-face {
   font-family: nunito;
   font-style: normal;
   font-weight: 800;
-  src: url(assets/fonts/nunito-extrabold-webfont.woff) format('woff'),
-    url(assets/fonts/nunito-extrabold-webfont.woff2) format('woff2');
+  src: url(../fonts/nunito-extrabold-webfont.woff) format('woff'),
+    url(../fonts/nunito-extrabold-webfont.woff2) format('woff2');
 }
 @font-face {
   font-family: orelega;
   font-style: normal;
   font-weight: 400;
-  src: url(assets/fonts/orelegaone-regular-webfont.woff) format('woff'),
-    url(assets/fonts/orelegaone-regular-webfont.woff2) format('woff2');
+  src: url(../fonts/orelegaone-regular-webfont.woff) format('woff'),
+    url(../fonts/orelegaone-regular-webfont.woff2) format('woff2');
 }
 .basket__btn,
 .card__btn {
@@ -260,7 +260,7 @@ input[type='number'] {
   padding: 0 15px;
 }
 .decor {
-  background-image: url(assets/img/icons/decor.svg);
+  background-image: url(../img/icons/decor.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -602,7 +602,7 @@ input[type='number'] {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   --tw-translate-y: -50%;
-  background-image: url(assets/img/israel-flag.png);
+  background-image: url(../img/israel-flag.png);
   background-position: 50%;
   content: '';
   height: 1rem;
@@ -623,7 +623,7 @@ input[type='number'] {
   width: 1.5rem;
 }
 .mobile-menu__btn {
-  background-image: url(assets/img/icons/menu.svg);
+  background-image: url(../img/icons/menu.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   height: 3rem;
@@ -631,10 +631,10 @@ input[type='number'] {
   z-index: 10;
 }
 .mobile-menu__btn.active {
-  background-image: url(assets/img/icons/menu-close.svg);
+  background-image: url(../img/icons/menu-close.svg);
 }
 .mobile-menu__btn-basket {
-  background-image: url(assets/img/icons/basket.svg);
+  background-image: url(../img/icons/basket.svg);
   position: relative;
 }
 .mobile-menu__btn-basket span {
@@ -785,7 +785,7 @@ input[type='number'] {
   padding-top: 0.5rem;
 }
 .basket__item-btn {
-  background-image: url(assets/img/icons/trash.svg);
+  background-image: url(../img/icons/trash.svg);
   background-position: 50%;
   height: 1.5rem;
   left: 0;
@@ -798,7 +798,7 @@ input[type='number'] {
   outline-offset: 2px;
 }
 .basket__decor {
-  background-image: url(assets/img/icons/decor-basket.svg);
+  background-image: url(../img/icons/decor-basket.svg);
   height: 0.625rem;
   margin-bottom: 1.25rem;
 }
@@ -872,7 +872,7 @@ input[type='number'] {
   z-index: 30;
 }
 .promo {
-  background-image: url(assets/img/promo-full.jpg);
+  background-image: url(../img/promo-full.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -917,7 +917,7 @@ input[type='number'] {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   --tw-translate-x: -50%;
-  background-image: url(assets/img/icons/decor.svg);
+  background-image: url(../img/icons/decor.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -955,10 +955,10 @@ input[type='number'] {
   }
 }
 .catalog {
-  background: url(assets/img/bg-1.jpg) no-repeat,
-    url(assets/img/bg-2.jpg) no-repeat, url(assets/img/bg-3.jpg) no-repeat,
-    url(assets/img/bg-4.jpg) no-repeat, url(assets/img/bg-5.jpg) no-repeat,
-    url(assets/img/bg-6.jpg) no-repeat;
+  background: url(../img/bg-1.jpg) no-repeat,
+    url(../img/bg-2.jpg) no-repeat, url(../img/bg-3.jpg) no-repeat,
+    url(../img/bg-4.jpg) no-repeat, url(../img/bg-5.jpg) no-repeat,
+    url(../img/bg-6.jpg) no-repeat;
   background-position: left -130px top 500px, right -570px top 1100px,
     left -80px top 1700px, right -580px top 2300px, left -330px top 3000px,
     right -270px top 3700px;
@@ -1262,7 +1262,7 @@ input[type='number'] {
   }
 }
 .card__counter-plus {
-  background-image: url(assets/img/icons/plus.svg);
+  background-image: url(../img/icons/plus.svg);
 }
 .card__counter-minus,
 .card__counter-plus {
@@ -1272,7 +1272,7 @@ input[type='number'] {
   width: 1rem;
 }
 .card__counter-minus {
-  background-image: url(assets/img/icons/minus.svg);
+  background-image: url(../img/icons/minus.svg);
 }
 .card__input {
   -webkit-appearance: none;
