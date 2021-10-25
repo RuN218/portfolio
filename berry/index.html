@@ -1,1 +1,1067 @@
-<!doctype html><html lang="en"><head><title>Berry Land</title><meta name="description" content="Berry Land Home page"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png"><meta name="theme-color" content="#ffffff"><script defer="defer" src="./assets/js/vendors.b6b3979150b8b6e8c063.js"></script><script defer="defer" src="./assets/js/app.0ea9b11d1bd8752cdd1c.js"></script><link href="./assets/css/app.a85c4cb0061204e13690.css" rel="stylesheet"></head><body class="index-page" :class="{ 'overflow-y-hidden': basketModal}" x-data="{ basketModal: false,isOpen: false }" @keydown.escape="isOpen = false; basketModal = false"><header class="header"><div class="container"><nav class="header__menu menu"><ul class="header__menu-left"><li class="menu__item menu__lang"><a class="menu__lang-link" href="#">Иврит</a></li><li class="menu__item"><a class="menu__item-link active" href="#">Все продукты</a></li><li class="menu__item"><a class="menu__item-link" href="#">Рецепты</a></li></ul><ul class="header__menu-right"><li class="menu__item"><a class="menu__item-link" href="#">Доставка</a></li><li class="menu__item"><a class="menu__item-link" href="#">Оплата</a></li><li class="menu__item menu__basket"><a class="menu__item-link" href="#">Корзина</a></li></ul></nav><nav class="header__mobile-menu" @click.outside="isOpen = false"><button class="mobile-menu__btn" :class="{ 'active': isOpen }" @click="isOpen = !isOpen; basketModal = false"></button><button class="mobile-menu__btn mobile-menu__btn-basket" @click="basketModal = !basketModal; isOpen = false"><span>3</span></button><ul class="mobile-menu__list" :class="{ 'active': isOpen }"><li class="menu__item"><a class="menu__item-link active" href="#">Все продукты</a></li><li class="menu__item"><a class="menu__item-link" href="#">Доставка</a></li><li class="menu__item"><a class="menu__item-link" href="#">Оплата</a></li><li class="menu__item"><a class="menu__item-link" href="#">Рецепты</a></li><li class="menu__item menu__lang"><a class="menu__lang-link" href="#">Иврит</a></li></ul></nav><a class="header__logo active" :class="{ 'active': !isOpen }" x-show="!isOpen" href="#"><img class="header__logo-img" src="assets/img/logo.png"></a></div></header><div class="main"><section class="promo"><div class="container"><h1 class="promo__title">Замороженные ягоды в Израиле</h1><h2 class="promo__subtitle">Доставка на дом</h2></div></section><section class="catalog"><div class="container"><div class="catalog__inner" x-data="{ tab: 'all'}"><nav class="catalog__nav"><a class="catalog__tab" :class="{ 'active': tab === 'all'}" @click.prevent="tab='all'" href="#">Все продукты</a><a class="catalog__tab" :class="{ 'active': tab === 'berries'}" @click.prevent="tab='berries'" href="#">Ягоды</a><a class="catalog__tab" :class="{ 'active': tab === 'superfood'}" @click.prevent="tab='superfood'" href="#">Суперфуд</a></nav><div class="catalog__wrapper"><div class="catalog__left"><div class="catalog__content" x-show="tab === 'all'"><div class="card"><h2 class="card__title">Малина замороженная Премиум (2.5 кг)</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/1.jpg"></div><div class="card__price-wrapper"><p class="card__price-new">85.00₪</p><div class="card__price-box sale"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Голубика замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/2.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Вишня замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/3.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Черная смородина замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/4.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/5.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Свекла + витамин В12 замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/6.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/7.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/8.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/9.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Свекла + витамин В12 замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/10.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/11.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/12.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/12.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Свекла + витамин В12 замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/13.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/14.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/15.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/16.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Свекла + витамин В12 замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/17.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/17.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/18.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/19.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Свекла + витамин В12 замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/20.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/21.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/22.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/23.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Свекла + витамин В12 замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/24.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/25.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/26.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div></div><div class="catalog__content" x-show="tab === 'berries'"><div class="card"><h2 class="card__title">Малина замороженная Премиум (2.5 кг)</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/1.jpg"></div><div class="card__price-wrapper"><p class="card__price-new">85.00₪</p><div class="card__price-box sale"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Голубика замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/2.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Вишня замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/3.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Черная смородина замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/4.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/9.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Свекла + витамин В12 замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/10.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/11.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Свекла + витамин В12 замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/13.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/14.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/15.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/16.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/17.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/18.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/19.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Свекла + витамин В12 замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/20.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/22.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/23.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Свекла + витамин В12 замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/24.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/25.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/26.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div></div><div class="catalog__content" x-show="tab === 'superfood'"><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/5.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Свекла + витамин В12 замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/6.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/7.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/8.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Куркума с имбирем замороженные органические</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/12.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Моринга замороженная органическая</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/21.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div><div class="card"><h2 class="card__title">Кейл — кудрявая капуста замороженная</h2><div class="card__pic"><img class="card__pic-img" src="assets/img/products/26.jpg"></div><div class="card__price-wrapper"><div class="card__price-box"><p class="card__price-old">93.00₪</p><p class="card__price-weight">за 2.5 кг</p></div></div><form class="card__form"><div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus" @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input" type="number" x-model="count" min="1" max="99"><button class="card__counter-plus" @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn" type="submit">В корзину</button></form></div></div></div><div class="catalog__right"><div class="basket" :class="{ 'modal': basketModal }"><h2 class="basket__title">Корзина</h2><ul class="basket__list"><li class="basket__item"><button class="basket__item-btn"></button><p class="basket__item-name">Свекла + витамин В12 Замороженная</p><div class="basket__item-price">2 x 26.00₪</div></li><li class="basket__item"><button class="basket__item-btn"></button><p class="basket__item-name">Моринга замороженная органическая</p><div class="basket__item-price">2 x 26.00₪</div></li><li class="basket__item"><button class="basket__item-btn"></button><p class="basket__item-name">Вишня замороженная</p><div class="basket__item-price">2 x53.00₪</div></li></ul><div class="basket__decor decor"></div><div class="basket__sum-wrapper"><p class="basket__sum-text">Подытог:</p><p class="basket__sum">184.00₪</p></div><div class="basket__btns"><a class="basket__btn basket__btn-pay" href="#">Оплатить</a><a class="basket__btn basket__btn-basket" href="#">Корзина</a></div></div></div></div></div></div></section></div><footer class="footer"><div class="container"><div class="footer__inner"><div class="footer__box"><h4 class="footer__box-title">ДЛЯ КЛИЕНТОВ</h4><a class="footer__link" href="#">Доставка и города</a><a class="footer__link" href="#">Доставка и города</a></div><div class="footer__box"><h4 class="footer__box-title">О ПРОДУКЦИИ</h4><a class="footer__link" href="#">Фото продукции</a><a class="footer__link" href="#">Вопросы и ответы</a></div><div class="footer__box"><h4 class="footer__box-title">КОНТАКТЫ</h4><a class="footer__link" href="mailto:info@berryland.co.il">info@berryland.co.il</a><a class="footer__link" href="tel:0559116577">055-9116577</a></div><div class="footer__box"><h4 class="footer__box-title">ЧАСЫ РАБОТЫ</h4><span class="footer__text">вс – чт 10:00 – 18:00</span><span class="footer__text">пт 10:00 – 13:00</span></div></div></div></footer><div class="layer" x-show="basketModal" @click="basketModal = false"></div></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Berry Land</title>
+  <meta name="description" content="Berry Land Home page">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+  <meta name="theme-color" content="#ffffff">
+  <script defer="defer" src="./assets/js/vendors.b6b3979150b8b6e8c063.js"></script>
+  <script defer="defer" src="./assets/js/app.0ea9b11d1bd8752cdd1c.js"></script>
+  <link href="./assets/css/app.862c62a11c7f055236c2.css" rel="stylesheet">
+</head>
+
+<body class="index-page" :class="{ 'overflow-y-hidden': basketModal}" x-data="{ basketModal: false,isOpen: false }"
+  @keydown.escape="isOpen = false; basketModal = false">
+  <header class="header">
+    <div class="container">
+      <nav class="header__menu menu">
+        <ul class="header__menu-left">
+          <li class="menu__item menu__lang"><a class="menu__lang-link" href="#">Иврит</a></li>
+          <li class="menu__item"><a class="menu__item-link active" href="#">Все продукты</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">Рецепты</a></li>
+        </ul>
+        <ul class="header__menu-right">
+          <li class="menu__item"><a class="menu__item-link" href="#">Доставка</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">Оплата</a></li>
+          <li class="menu__item menu__basket"><a class="menu__item-link" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+      <nav class="header__mobile-menu" @click.outside="isOpen = false"><button class="mobile-menu__btn"
+          :class="{ 'active': isOpen }" @click="isOpen = !isOpen; basketModal = false"></button><button
+          class="mobile-menu__btn mobile-menu__btn-basket"
+          @click="basketModal = !basketModal; isOpen = false"><span>3</span></button>
+        <ul class="mobile-menu__list" :class="{ 'active': isOpen }">
+          <li class="menu__item"><a class="menu__item-link active" href="#">Все продукты</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">Доставка</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">Оплата</a></li>
+          <li class="menu__item"><a class="menu__item-link" href="#">Рецепты</a></li>
+          <li class="menu__item menu__lang"><a class="menu__lang-link" href="#">Иврит</a></li>
+        </ul>
+      </nav><a class="header__logo active" :class="{ 'active': !isOpen }" x-show="!isOpen" href="#"><img
+          class="header__logo-img" src="assets/img/logo.png"></a>
+    </div>
+  </header>
+  <div class="main">
+    <section class="promo">
+      <div class="container">
+        <h1 class="promo__title">Замороженные ягоды в Израиле</h1>
+        <h2 class="promo__subtitle">Доставка на дом</h2>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__inner" x-data="{ tab: 'all'}">
+          <nav class="catalog__nav"><a class="catalog__tab" :class="{ 'active': tab === 'all'}"
+              @click.prevent="tab='all'" href="#">Все продукты</a><a class="catalog__tab"
+              :class="{ 'active': tab === 'berries'}" @click.prevent="tab='berries'" href="#">Ягоды</a><a
+              class="catalog__tab" :class="{ 'active': tab === 'superfood'}" @click.prevent="tab='superfood'"
+              href="#">Суперфуд</a></nav>
+          <div class="catalog__wrapper">
+            <div class="catalog__left">
+              <div class="catalog__content" x-show="tab === 'all'">
+                <div class="card">
+                  <h2 class="card__title">Малина замороженная Премиум (2.5 кг)</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/1.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <p class="card__price-new">85.00₪</p>
+                    <div class="card__price-box sale">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Голубика замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/2.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Вишня замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/3.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Черная смородина замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/4.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/5.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Свекла + витамин В12 замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/6.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/7.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/8.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/9.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Свекла + витамин В12 замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/10.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/11.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/12.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/12.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Свекла + витамин В12 замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/13.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/14.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/15.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/16.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Свекла + витамин В12 замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/17.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/17.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/18.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/19.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Свекла + витамин В12 замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/20.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/21.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/22.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/23.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Свекла + витамин В12 замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/24.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/25.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/26.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+              </div>
+              <div class="catalog__content" x-show="tab === 'berries'">
+                <div class="card">
+                  <h2 class="card__title">Малина замороженная Премиум (2.5 кг)</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/1.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <p class="card__price-new">85.00₪</p>
+                    <div class="card__price-box sale">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Голубика замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/2.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Вишня замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/3.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Черная смородина замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/4.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/9.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Свекла + витамин В12 замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/10.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/11.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Свекла + витамин В12 замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/13.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/14.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/15.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/16.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/17.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/18.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/19.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Свекла + витамин В12 замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/20.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/22.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/23.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Свекла + витамин В12 замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/24.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/25.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/26.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+              </div>
+              <div class="catalog__content" x-show="tab === 'superfood'">
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/5.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Свекла + витамин В12 замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/6.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/7.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/8.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Куркума с имбирем замороженные органические</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/12.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Моринга замороженная органическая</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/21.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+                <div class="card">
+                  <h2 class="card__title">Кейл — кудрявая капуста замороженная</h2>
+                  <div class="card__pic"><img class="card__pic-img" src="assets/img/products/26.jpg"></div>
+                  <div class="card__price-wrapper">
+                    <div class="card__price-box">
+                      <p class="card__price-old">93.00₪</p>
+                      <p class="card__price-weight">за 2.5 кг</p>
+                    </div>
+                  </div>
+                  <form class="card__form">
+                    <div class="card__counter" x-data="{ count: 2}"><button class="card__counter-minus"
+                        @click.prevent="count &gt; 1 ? count-- : count = 1"></button><input class="card__input"
+                        type="number" x-model="count" min="1" max="99"><button class="card__counter-plus"
+                        @click.prevent="count &lt; 99 ? count++ : count = 99"></button></div><button class="card__btn"
+                      type="submit">В корзину</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__right">
+              <div class="basket" :class="{ 'modal': basketModal }">
+                <h2 class="basket__title">Корзина</h2>
+                <ul class="basket__list">
+                  <li class="basket__item"><button class="basket__item-btn"></button>
+                    <p class="basket__item-name">Свекла + витамин В12 Замороженная</p>
+                    <div class="basket__item-price">2 x 26.00₪</div>
+                  </li>
+                  <li class="basket__item"><button class="basket__item-btn"></button>
+                    <p class="basket__item-name">Моринга замороженная органическая</p>
+                    <div class="basket__item-price">2 x 26.00₪</div>
+                  </li>
+                  <li class="basket__item"><button class="basket__item-btn"></button>
+                    <p class="basket__item-name">Вишня замороженная</p>
+                    <div class="basket__item-price">2 x53.00₪</div>
+                  </li>
+                </ul>
+                <div class="basket__decor decor"></div>
+                <div class="basket__sum-wrapper">
+                  <p class="basket__sum-text">Подытог:</p>
+                  <p class="basket__sum">184.00₪</p>
+                </div>
+                <div class="basket__btns"><a class="basket__btn basket__btn-pay" href="#">Оплатить</a><a
+                    class="basket__btn basket__btn-basket" href="#">Корзина</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__box">
+          <h4 class="footer__box-title">ДЛЯ КЛИЕНТОВ</h4><a class="footer__link" href="#">Доставка и города</a><a
+            class="footer__link" href="#">Доставка и города</a>
+        </div>
+        <div class="footer__box">
+          <h4 class="footer__box-title">О ПРОДУКЦИИ</h4><a class="footer__link" href="#">Фото продукции</a><a
+            class="footer__link" href="#">Вопросы и ответы</a>
+        </div>
+        <div class="footer__box">
+          <h4 class="footer__box-title">КОНТАКТЫ</h4><a class="footer__link"
+            href="mailto:info@berryland.co.il">info@berryland.co.il</a><a class="footer__link"
+            href="tel:0559116577">055-9116577</a>
+        </div>
+        <div class="footer__box">
+          <h4 class="footer__box-title">ЧАСЫ РАБОТЫ</h4><span class="footer__text">вс – чт 10:00 – 18:00</span><span
+            class="footer__text">пт 10:00 – 13:00</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="layer" x-show="basketModal" @click="basketModal = false"></div>
+</body>
+
+</html>
